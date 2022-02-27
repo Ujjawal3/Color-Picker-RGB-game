@@ -33,7 +33,7 @@ body{
 .menu span{
     color:rgb(101, 164, 219);
     padding:0px 20px;
-    opacity: 0;
+    opacity: 1;
     text-align: center;
 }
  .buttons{
