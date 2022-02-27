@@ -1,17 +1,25 @@
 let row1=document.querySelector(".row1");
 let row2=document.querySelector(".row2");
 let select;
+let mode=easy;
 
 newGame();
 
 function hard()
 {
+    if(mode==hard){return;}
+    mode=hard;
     row2.style.display="flex";
+    generateRandomColorBoxes();
 }
 
 function easy()
 {
+    if(mode==easy){return;}
     row2.style.display="none";
+    mode=easy;
+    generateRandomColorBoxes();
+
 }
 
 function newGame()
@@ -36,7 +44,10 @@ generateRandomColorBoxes();
 function generateRandomColorBoxes()
 {
     //choosing and coloring the right box
+    if(mode==easy)
     window.d=1+Math.round(2*Math.random());
+    else
+    window.d=1+Math.round(5*Math.random());
     document.querySelector("#box"+window.d).style.backgroundColor=document.querySelector(".top h1").textContent;
         
     for(let i=1;i<=6;i++)
