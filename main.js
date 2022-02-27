@@ -7,19 +7,18 @@ newGame();
 
 function hard()
 {
-    if(mode==hard){return;}
-    mode=hard;
     row2.style.display="flex";
+    if(mode==hard || !select){ return;}
+    mode=hard;
     generateRandomColorBoxes();
 }
 
 function easy()
 {
-    if(mode==easy){return;}
     row2.style.display="none";
+    if(mode==easy || !select){return;}
     mode=easy;
     generateRandomColorBoxes();
-
 }
 
 function newGame()
@@ -70,8 +69,8 @@ for(let i=1;i<=6;i++)
         if(!select){return;}
         if(e.target==document.querySelector("#box"+window.d))
         {
-            successMessage();
             select=false;
+            successMessage();
         }
         else
         failureMessage(e.target);
