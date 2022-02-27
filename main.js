@@ -25,7 +25,7 @@ function newGame()
 {
     select=true;
     document.querySelector(".top").style.backgroundColor="rgb(228, 173, 24)";
-    document.querySelector(".menu span").style.opacity=0;
+    document.querySelector(".menu span").textContent="Pick! a color box";
     for(let i=1;i<=6;i++)
     document.querySelector("#box"+i).style.opacity=1;
     generateRandomColor();
