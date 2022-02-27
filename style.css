@@ -4,19 +4,23 @@ body{
 *{
     margin:0px;
 }
+.fixed{
+    position: sticky;
+    top:0px;
+}
 .top{
     background-color: rgb(228, 173, 24);
     text-align: center;
     color: beige;
     padding:10px 0px;
     border:2px solid black;
+  
 }
 .top h1{
     margin:15px 0px;
     color: rgb(80, 80, 185);
 }
 .menu{
-    /* text-align: center; */
     color:brown;
     font-size: 12px;
     background-color: antiquewhite;
@@ -28,7 +32,6 @@ body{
     border-bottom:2px solid black;
     border-left:2px solid black;
     border-right:2px solid black;
-
 }
 .menu span{
     color:rgb(101, 164, 219);
