@@ -34,6 +34,7 @@ body{
     color:rgb(101, 164, 219);
     padding:0px 20px;
     opacity: 0;
+    text-align: center;
 }
  .buttons{
     margin:4px 5px;
