@@ -43,7 +43,9 @@ body{
     font-size: 15px;
     cursor: pointer;
 }   
-
+.buttons:hover{
+    background-color: #ec8b57;
+}
 .row1{
     display: flex;
     justify-content: center;
